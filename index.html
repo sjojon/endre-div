@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="minDiv">Dette er en test</div>
+    <button onclick="changeColorAndTekst('green', 'Testing av funksjon', 'pink', '135px')">Grønn</button>
+    <button onclick="changeColorAndTekst('blue', 'Prøve på å forandre farge', 'yellow', '170px')">Blå</button>
+
+    <script>
+        function changeColorAndTekst(color, tekst, tekstfarge, width) {
+            document.getElementById('minDiv').style.background = color;
+            document.getElementById('minDiv').innerHTML = tekst;
+            document.getElementById('minDiv').style.color = tekstfarge;
+            document.getElementById('minDiv').style.width = width;
+        }
+
+
+    </script>
+</body>
+
+</html>
